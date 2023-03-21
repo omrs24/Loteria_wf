@@ -5,9 +5,9 @@ using System.Web;
 
 namespace Loteria_wf.Models
 {
-    public class LotteryCards
+    public class AspNetLotteryCards
     {
-        public int Id { get; set; }
+        public int id { get; set; }
 
         //fillable
         public string cardname { get; set; }

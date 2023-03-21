@@ -299,7 +299,6 @@
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Cards\CardRegister.aspx" />
-    <Content Include="Cards\WebForm1.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -448,8 +447,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\LotteryCards.cs" />
-    <Compile Include="Models\LotteryTables.cs" />
+    <Compile Include="Models\AspNetLotteryCards.cs" />
+    <Compile Include="Models\AspNetLotteryTables.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -479,13 +478,6 @@
     </Compile>
     <Compile Include="Cards\CardRegister.aspx.designer.cs">
       <DependentUpon>CardRegister.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Cards\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Cards\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

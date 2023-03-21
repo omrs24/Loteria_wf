@@ -1,4 +1,4 @@
-﻿<%@ Page Title="¡Loteria!" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CardCreation.aspx.cs" Inherits="Loteria_wf._Default" %>
+﻿<%@ Page Title="¡Loteria!" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CardCreation.aspx.cs" Inherits="Loteria_wf.CardCreation" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -27,13 +27,15 @@
       
         <div class="col-md-6">
           <label for="numero-tablas" class="form-label">Número de tablas</label>
-          <asp:TextBox ID="numerotablas" runat="server" TextMode="Number" 
+          <asp:TextBox  runat="server" ID="numerotablas" TextMode="Number" 
               ClientIDMode="Static" CssClass="form-control"></asp:TextBox>
         </div>
         <div class="col-md-6 d-flex align-items-center justify-content-center">
-            <asp:Button ID="btncreartablas" runat="server" Text="Crear tablas"
-                CssClass="btn btn-primary"/>
+            <asp:Button runat="server" ID="btncreartablas"  Text="Crear tablas"
+                CssClass="btn btn-primary" OnClick="btncreartablas_Click"/>
         </div>
+
+        <asp:Label ID="lblmsg" runat="server" Text=""></asp:Label>
     </main>
 
 </asp:Content>

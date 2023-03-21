@@ -16,8 +16,8 @@ namespace Loteria_wf.Classes
         {
         }
 
-        public DbSet<LotteryCards> LotteryCards { get; set; }
-        public DbSet<LotteryTables> LotteryTables { get; set; }
+        public DbSet<AspNetLotteryCards> Cards { get; set; }
+        public DbSet<AspNetLotteryTables> Tables { get; set; }
 
     }
 }
